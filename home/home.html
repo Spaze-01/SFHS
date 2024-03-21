@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewoort" content="width=device-width, initial-scale=1">
+            <title>SFHS</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #top-nav {
+                    display: inline-block;
+                }
+
+                #too-nav .sfhs-logo {
+                    
+                }
+
+                #top-nav .sfhs-logo img {
+                    width: 8vh;
+                    display: inline-block;
+                }
+
+                #top-nav .school-name {
+                    font-size: 2.4vh;
+                    width: 5vh;
+                }
+
+                #myLinks .hamburger-button {
+                    background-color: #333;
+                    color: white;
+                    padding: 1.5vh;
+                    font-size: 2.4vh;
+                    cursor: pointer;
+                }
+
+                #myLinks .nav-links {
+                    display: none;
+                    background-color: #333;
+                    color: white;
+                }
+
+                #myLinks .nav-links a {
+                    display: block;
+                    padding: 15px;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                #myLinks .nav-links a:hover {
+                    background-color: #111;
+                }
+
+                @media only screen and (max-width:800px) {
+                    #top-nav {
+                        width: 80%;
+                        padding: 0;
+                    }
+                    .right {
+                            width: 100%;
+                    }
+                }
+
+                @media only screen and (max-width:500px) {
+                    #top-nav, .main, .right {
+                        width: 100%;
+                    }
+                }
+
+
+            </style>
+        </head>
+        <body>
+            <div id="top-nav">
+                <div class="sfhs-logo">
+                    <img src="../.images/sfhs_logo.png" alt="SFHS Logo">
+                </div>
+                <div class="school-name">
+                    <p>San Francisco High School</p>
+                </div>
+                <div class="email-button">
+                </div>
+                <div id="myLinks">
+                    <button class="hamburger-button"> ☰ </button>
+                    <div class="nav-links">
+                        <a href="#">News</a>
+                        <a href="#">Scholarships</a>
+                        <a href="#">Programs</a>
+                        <a href="#">About</a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.hamburger-button').addEventListener('click', function() {
+                   document.querySelector('.nav-links').style.display = 
+                   (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
+                });                
+            </script>
+        </body>
+
+    </html>
